@@ -1,4 +1,4 @@
-# carrito-vanilla-js
+# Carrito de compras con Vanilla JS
 Carrito de compras realizado con Vanilla JS y el CDN de TailwindCSS para un estilizado rápido.
 - Añadir productos al carrito
 - Eliminar productos del carrito
