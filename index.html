@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de compras</title>
+    <link rel="shortcut icon" href="https://indyme.com/wp-content/uploads/2020/11/shopping-cart-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+    <script src="https://unpkg.com/akar-icons-fonts"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <style>
+        * {
+            font-family: 'Poppins';
+        }
+    </style>
+
+    <!-- Alert -->
+    <div id="alert" class="fixed ml-2 shadow-xl bg-green-500 py-2 px-5 rounded-lg hidden">
+        <p class="text-sm text-gray-700">s</p>
+    </div>
+    <div class="container mx-auto">
+        <div class="flex justify-center mt-8 h-12">
+            <img src="https://indyme.com/wp-content/uploads/2020/11/shopping-cart-icon.png" alt="Cart">
+            <p class='flex items-center ml-2'>Añade tus productos</p>
+        </div>
+            
+        <!-- Main container -->
+        <div class="container flex flex-col shadow-lg px-12 py-5 gap-y-5 bg-gray-100 rounded-lg mt-2">
+            <p class='font-medium text-purple-900'><i class="ai-shopping-bag mr-1"></i>Tienda</p>
+            <!-- Contenedor de productos -->
+            <div class="container flex justify-center items-center gap-x-5" id='store'>
+                <!-- Producto renderizado por JS -->
+                
+            </div>
+        </div>
+
+        <!-- Main container del carrito -->
+        <div class="container flex flex-col shadow-lg px-12 py-5 my-12 bg-gray-100 rounded-lg">
+            <p class='font-medium text-purple-900'><i class="ai-cart mr-2"></i>Tu carrito</p>
+            <!-- Contenedor de productos de carrito-->
+            <table class="container flex flex-col justify-center items-center gap-x-5 table-auto" id="table">
+                <thead class='w-full hidden' id="table-head">
+                    <tr class='flex justify-between'>
+                        <td class='text-sm italic w-5 flex justify-center'><i class="ai-hashtag"></i></td>
+                        <td class='text-sm italic w-36 flex justify-center'>Nombre</td>
+                        <td class='text-sm italic w-24 flex justify-end'>Cantidad</td>
+                        <td class='text-sm italic flex justify-center w-24'>Precio</td>
+                        <td class='text-sm italic'>Eliminar</td>
+                    </tr>
+                </thead>
+                <tbody class='w-full'>
+                    <!-- Producto del carrito -->
+                    <tr class="flex justify-center items-center h-58 w-full px-3 py-5 mt-2" id="message">
+                        <td class='flex items-center justify-center text-gray-600'>Todavía no tienes productos en tu carrito... ¡Añade algunos!</td>
+                    </tr>
+                </tbody> 
+            </table>
+
+            <div id='summary' class="hidden">
+                <!-- Renderizado con JS -->
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./js/index.js" type="module"></script>
+</body>
+</html>

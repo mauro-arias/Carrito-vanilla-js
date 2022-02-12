@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de compras</title>
+    <link rel="shortcut icon" href="https://indyme.com/wp-content/uploads/2020/11/shopping-cart-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+    <script src="https://unpkg.com/akar-icons-fonts"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <style>
+        * {
+            font-family: 'Poppins';
+        }
+    </style>
+    <div class="container mx-auto">
+        <div class="flex justify-center mt-8 h-12">
+            <img src="https://indyme.com/wp-content/uploads/2020/11/shopping-cart-icon.png" alt="Cart">
+            <p class='flex items-center ml-2'>Añade tus productos</p>
+        </div>
+            
+        <!-- Main container -->
+        <div class="container flex flex-col shadow-lg px-12 py-5 gap-y-5 bg-gray-100 rounded-lg mt-2">
+            <p class='font-medium text-purple-900'><i class="ai-shopping-bag mr-1"></i>Tienda</p>
+            <!-- Contenedor de productos -->
+            <div class="container flex justify-center items-center gap-x-5">
+                <!-- Producto -->
+                <div class="shadow-lg h-58 w-52 rounded-lg">
+                    <img class='h-32 w-full rounded-t-lg' src="https://store.bananacomputer.com/cmsAdmin/uploads/o_1d72e6pondie12dp1t4d159p1gm4a.jpg" alt="Mac">
+
+                    <div class="px-5 py-2">
+                        <p>Mac</p>
+                    </div>
+
+                    <div class="px-5 py-2 text-purple-900">
+                        <p>$199.999</p>
+                    </div>
+
+                    <div class='flex justify-center items-center px-5 py-2 w-full'>
+                        <button class='bg-gray-900 transition duration-200 hover:bg-gray-700 text-white w-full py-1 rounded-lg shadow-lg'><i class="ai-cart mr-2 text-lg"></i>Agregar</button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <!-- Main container del carrito -->
+        <div class="container flex flex-col shadow-lg px-12 py-5 my-12 bg-gray-100 rounded-lg">
+            <p class='font-medium text-purple-900'><i class="ai-cart mr-2"></i>Tu carrito</p>
+            <!-- Contenedor de productos de carrito-->
+            <table class="container flex flex-col justify-center items-center gap-x-5 table-auto">
+                <thead class='w-full'>
+                    <tr class='flex justify-between'>
+                        <td class='text-sm italic'><i class="ai-hashtag"></i></td>
+                        <td class='text-sm italic'>Nombre</td>
+                        <td class='text-sm italic'>Cantidad</td>
+                        <td class='text-sm italic'>Precio</td>
+                        <td class='text-sm italic'>Eliminar</td>
+                    </tr>
+                </thead>
+                <tbody class='w-full'>
+                    <!-- Producto del carrito -->
+                    <tr class="flex shadow-lg justify-between items-center h-58 w-52 rounded-lg w-full px-3 py-5 bg-white mt-2">
+                        <!-- Número de producto (indice)-->
+                        <td>
+                            <p class='inline'>1</p>
+                        </td>
+
+                        <!-- Nombre del producto-->
+                        <td>Mac</td>
+
+                        <!-- Cantidad del carrito con botones añadir y restar-->
+                        <td class='flex items-center justify-evenly'>
+                            <button class='bg-green-600 p-1 text-white rounded shadow-lg'><i class="ai-plus text-sm"></i></button>
+                            <p class='text-lg mx-2'>1</p>
+                            <button class='bg-purple-900 p-1 text-white rounded shadow-lg'><i class="ai-minus text-sm"></i></button>
+                        </td>
+
+                        <!-- Precio del producto-->
+                        <td><span class='text-sm'>$</span>190.999</td>
+
+                        <!-- Botón eliminar producto-->
+                        <td>
+                            <button class='bg-red-900 transition duration-200 hover:bg-gray-700 p-2 text-white rounded-lg shadow-lg'><i class="ai-trash-can text-lg"></i></button>
+                        </td>
+                    </tr>
+                </tbody> 
+            </table>
+
+            <p class='font-medium text-purple-900 mt-3'><i class="ai-ticket mr-1"></i>Resumen</p>
+
+            <div class='flex flex-col rounded-lg gap-y-2 shadow-lg bg-white p-3 mt-2 w-72'>
+                <p class='text-sm'>Cantidad total de productos: 1</p>
+                <p class='text-lg font-semibold'>Total: <span class='text-sm'>$</span>199.999</p>
+            </div>
+
+            <div class='flex flex-col rounded-lg gap-y-2 py-3 mt-2 w-72'>
+                <button class='bg-green-700 transition duration-200 hover:bg-gray-700 text-white py-1 rounded-lg shadow-lg'><i class="ai-check mr-2 text-lg"></i></i>Ir al pago</button>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,20 @@
+[
+    {
+        "id": 0,
+        "name": "Computadora",
+        "price": 199999,
+        "image": "https://store.bananacomputer.com/cmsAdmin/uploads/o_1d72e6pondie12dp1t4d159p1gm4a.jpg"
+    },
+    {
+        "id": 1,
+        "name": "Cafetera",
+        "price": 49999,
+        "image": "https://images.philips.com/is/image/philipsconsumer/abb09ff2ba424b7d99d2ad1f0131460e?$jpglarge$&wid=960"
+    },
+    {
+        "id": 2,
+        "name": "Celular",
+        "price": 239999,
+        "image": "https://www.macstation.com.ar/img/productos/small/1680-1111.jpg"
+    }
+]
